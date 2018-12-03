@@ -10,7 +10,6 @@ int main() {
 	int i;
     for (i=0; i!=b; i+=9) {
 		 c=a+i;
-			if (a-c==0)
 		 printf("%d\n", c);
 	}
 }
