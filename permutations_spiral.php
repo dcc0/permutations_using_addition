@@ -17,7 +17,7 @@ for ($i = 1; $i != $fact + 1; $i++)
 		  else
 			{
 			$perm = substr($perm, $n - $m + 1) . strrev(substr($perm, 0, $n - $m + 1));
-			continue2;
+			continue 2;
 			}
 		}
 	}
