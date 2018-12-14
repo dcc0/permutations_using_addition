@@ -12,11 +12,11 @@ $perm="0123456789";
 				$z=$i;
 				for ($i; $i != $n+$z-1; $i++) {
 				$sw=$perm[0];
-			    for ($j=0; $j<$n-1; $j++) $perm[$j]=$perm[$j+1];
+			   	 for ($j=0; $j<$n-1; $j++) $perm[$j]=$perm[$j+1];
 				$perm[$n-1]=$sw;
 				print $perm . "\n";
 				}
-
+			/*Этот блок выполняется (n-1)! раз, а не n! раз*/
 			$mm = $i;
 			$m=$n;
 			while ($m > 0) {
