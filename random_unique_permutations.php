@@ -10,8 +10,8 @@
 		$var.=rand(1, $n);
 		}
 		if (count(array_unique($temp))==$n && !in_array($var, $arr)) {
-		$arr[]=implode('', $temp);
-		print (implode('', $temp) . "\n");
+		$arr[]=$var;
+		print ($var . "\n");
 		}
 
 		if (count($arr)==$fact) break;
@@ -20,5 +20,5 @@
 	}
 
 	print_r(array_unique($arr));
-	echo 'Циклов: ' . $i;
+	echo $i;
 ?>
