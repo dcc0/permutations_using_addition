@@ -1,26 +1,26 @@
 <?php
-			$n=7;
-			$fact=5040;
+			$n=4;
+			$fact=24;
 			$arr=array();
 			$i=0;
-			$value=null;
+			$key=null;
 
 
 			while (count($arr)!=$fact) {
 
 				for ($j=0; $j !=$n; $j++) {
 				$var=rand(1, $n);
-				$value.=$var;
+				$key.=$var;
 				$temp[]=$var;
 				}
 
-				if (count(array_unique($temp))==$n && !isset($arr[$value]))
-				$arr[$value]=$i++;
-				//print ($value . "\n");
+				if (count(array_unique($temp))==$n && !isset($arr[$key]))
+				$arr[$key]=$i++;
+				//print ($key . "\n");
 
 			unset($temp);
 			$var="";
-			$value="";
+			$key="";
 
 			}
 
