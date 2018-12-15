@@ -1,6 +1,6 @@
 <?php
-	$n=5;
-	$fact=120;
+	$n=4;
+	$fact=24;
 	$arr=array();
 	$i=1;
 
@@ -11,7 +11,7 @@
 		if (count(array_unique($temp))==$n && !in_array(implode('', $temp), $arr))
 		$arr[]=implode('', $temp);
 
-		if (count(array_unique($arr))==$fact) break;
+		if (count($arr)==$fact) break;
 	unset($temp);
 	}
 
