@@ -1,4 +1,5 @@
 <?php
+/*Random generating all unique permutations. Very slow */
 	$n=4;
 	$fact=24;
 	$arr=array();
